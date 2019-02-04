@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="?backgroundColor"
+    android:layout_width="match_parent">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbars="none"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_centerInParent="true"/>
+
+
+        <TextView
+            android:text="Good Work!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="?mytitleTextColor"
+            android:layout_gravity="center_horizontal"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:id="@+id/textView3" />
+
+        <TextView
+            android:text="You've studied 18 terms from Eji Ogbe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:textColor="?mytitleTextColor"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18sp"
+            android:id="@+id/prompt" />
+
+
+        <Button
+        android:text="STUDY AGAIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icon"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true"
+        android:textAllCaps="true"
+        android:background="?myPrimaryColor"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginBottom="5dp"
+        android:id="@+id/study_again" />
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

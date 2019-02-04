@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:drawable="@drawable/seekbar_back"
+        android:id="@android:id/secondaryProgress"
+        />
+    <item
+        android:drawable="@drawable/seekbar_progress"
+        android:id="@android:id/progress"
+        />
+</layer-list>

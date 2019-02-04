@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DragSelectRecyclerView">
+        <attr name="dsrv_autoScrollHotspotHeight" format="dimension" />
+        <attr name="dsrv_autoScrollEnabled" format="boolean" />
+        <attr name="dsrv_autoScrollHotspot_offsetTop" format="dimension" />
+        <attr name="dsrv_autoScrollHotspot_offsetBottom" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleButton">
+        <attr name="cb_color" format="color" />
+        <attr name="cb_pressedRingWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="EditTag">
+        <attr name="tag_layout" format="reference"></attr>
+        <attr name="input_layout" format="reference"></attr>
+        <attr name="delete_mode_bg" format="reference"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ChipCloud">
+        <attr name="deselectedColor" format="color" />
+        <attr name="deselectedFontColor" format="color" />
+        <attr name="selectedColor" format="color" />
+        <attr name="selectedFontColor" format="color" />
+        <attr name="selectTransitionMS" format="integer" />
+        <attr name="deselectTransitionMS" format="integer" />
+        <attr name="selectMode">
+            <enum name="single" value="0" />
+            <enum name="multi" value="1" />
+            <enum name="required" value="2" />
+            <enum name="none" value="3" />
+        </attr>
+        <attr name="labels" format="reference"/>
+    </declare-styleable>
+
+    <attr name="myPrimaryColor" format="color" />
+<attr name="myTransparentColor" format="color" />
+<attr name="myPrimaryDarkColor" format="color" />
+<attr name="myColorAccent" format="color" />
+<attr name="backgroundColor" format="color" />
+<attr name="mycardBackgroundColor" format="color" />
+<attr name="mytitleTextColor" format="color" />
+<attr name="mysubtitleTextColor" format="color" />
+    <attr name="mytitleTextColor_onBack" format="color" />
+    <attr name="mysubtitleTextColor_onBack" format="color" />
+
+
+    <attr name="fabColor" format="color" />
+    <attr name="fabSubItemsColor" format="color" />
+
+    <attr name="hintColor" format="color" />
+
+<attr name="darkTextColor" format="color" />
+<attr name="lightTextColor" format="color" />
+<attr name="mytoolbarStyle" format="reference" />
+<attr name="myActionBarToolbarStyle" format="reference" />
+<attr name="mytoolbarPopUpStyle" format="reference" />
+<attr name="channelRippleSelector" format="reference"/>
+
+<attr name="gradient_back" format="reference"/>
+
+
+
+<attr format="reference" name="tagViewStyle"/>
+<declare-styleable name="TagView">
+    <attr format="dimension" name="tagCornerRadius"/>
+    <attr format="dimension" name="tagPadding"/>
+    <attr format="boolean" name="tagUppercase"/>
+</declare-styleable>
+
+<declare-styleable name="FloatingActionButton">
+    <attr name="fab_colorNormal" format="color" />
+    <attr name="fab_colorPressed" format="color" />
+    <attr name="fab_colorDisabled" format="color" />
+    <attr name="fab_colorRipple" format="color" />
+    <attr name="fab_showShadow" format="boolean" />
+    <attr name="fab_shadowColor" format="color" />
+    <attr name="fab_shadowRadius" format="dimension" />
+    <attr name="fab_shadowXOffset" format="dimension" />
+    <attr name="fab_shadowYOffset" format="dimension" />
+    <attr name="fab_size" format="enum">
+        <enum name="normal" value="0" />
+        <enum name="mini" value="1" />
+    </attr>
+    <attr name="fab_showAnimation" format="reference" />
+    <attr name="fab_hideAnimation" format="reference" />
+    <attr name="fab_label" format="string" />
+    <attr name="fab_elevationCompat" format="dimension" />
+    <attr name="fab_progress_color" format="color" />
+    <attr name="fab_progress_backgroundColor" format="color" />
+    <attr name="fab_progress_indeterminate" format="boolean" />
+    <attr name="fab_progress_max" format="integer" />
+    <attr name="fab_progress" format="integer" />
+    <attr name="fab_progress_showBackground" format="boolean" />
+</declare-styleable>
+
+<declare-styleable name="FloatingActionMenu">
+    <attr name="menu_showShadow" format="boolean" />
+    <attr name="menu_buttonSpacing" format="dimension" />
+    <attr name="menu_labels_margin" format="dimension" />
+    <attr name="menu_labels_showAnimation" format="reference" />
+    <attr name="menu_labels_hideAnimation" format="reference" />
+    <attr name="menu_labels_paddingTop" format="dimension" />
+    <attr name="menu_labels_paddingLeft" format="dimension" />
+    <attr name="menu_labels_paddingRight" format="dimension" />
+    <attr name="menu_labels_paddingBottom" format="dimension" />
+    <attr name="menu_labels_padding" format="dimension" />
+    <attr name="menu_labels_textColor" format="color" />
+    <attr name="menu_labels_textSize" format="dimension" />
+    <attr name="menu_labels_cornerRadius" format="dimension" />
+    <attr name="menu_labels_showShadow" format="boolean" />
+    <attr name="menu_labels_colorNormal" format="color" />
+    <attr name="menu_labels_colorPressed" format="color" />
+    <attr name="menu_labels_colorRipple" format="color" />
+    <attr name="menu_labels_position" format="enum">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="menu_icon" format="reference" />
+    <attr name="menu_animationDelayPerItem" format="integer" />
+    <attr name="menu_buttonToggleAnimation" format="reference" />
+    <attr name="menu_labels_singleLine" format="boolean" />
+    <attr name="menu_labels_ellipsize" format="enum">
+        <enum name="none" value="0" />
+        <enum name="start" value="1" />
+        <enum name="middle" value="2" />
+        <enum name="end" value="3" />
+        <enum name="marquee" value="4" />
+    </attr>
+    <attr name="menu_labels_maxLines" format="integer" />
+    <attr name="menu_fab_size" format="enum">
+        <enum name="normal" value="0" />
+        <enum name="mini" value="1" />
+    </attr>
+    <attr name="menu_labels_style" format="reference" />
+    <attr name="menu_shadowColor" format="color" />
+    <attr name="menu_shadowRadius" format="dimension" />
+    <attr name="menu_shadowXOffset" format="dimension" />
+    <attr name="menu_shadowYOffset" format="dimension" />
+    <attr name="menu_colorNormal" format="color" />
+    <attr name="menu_colorPressed" format="color" />
+    <attr name="menu_colorRipple" format="color" />
+    <attr name="menu_openDirection" format="enum">
+        <enum name="up" value="0" />
+        <enum name="down" value="1" />
+    </attr>
+    <attr name="menu_backgroundColor" format="color" />
+    <attr name="menu_fab_label" format="string" />
+    <attr name="menu_fab_show_animation" format="reference" />
+    <attr name="menu_fab_hide_animation" format="reference" />
+</declare-styleable>
+
+
+<declare-styleable name="CollectionPicker">
+    <attr name="cp_itemRadius" format="dimension" />
+    <attr name="cp_itemBackgroundNormal" format="color" />
+    <attr name="cp_itemBackgroundPressed" format="color" />
+    <attr name="cp_addIcon" format="reference" />
+    <attr name="cp_cancelIcon" format="reference" />
+    <attr name="cp_itemMargin" format="dimension" />
+    <attr name="cp_itemTextColor" format="color"/>
+    <attr name="cp_textPaddingLeft" format="dimension" />
+    <attr name="cp_textPaddingRight" format="dimension" />
+    <attr name="cp_textPaddingTop" format="dimension" />
+    <attr name="cp_textPaddingBottom" format="dimension" />
+    <attr name="cp_simplified" format="boolean" />
+</declare-styleable>
+
+<declare-styleable name="LinearListView">
+    <attr name="android:entries" />
+    <attr name="dividerThickness" format="dimension" />
+</declare-styleable>
+
+<declare-styleable name="DrawerFrameLayout">
+    <attr name="drawerMaxWidth" format="dimension" />
+</declare-styleable>
+
+
+<declare-styleable name="MaterialSearchView">
+    <attr name="searchBackground" format="integer" />
+    <attr name="searchVoiceIcon" format="integer" />
+    <attr name="searchCloseIcon" format="integer" />
+    <attr name="searchBackIcon" format="integer" />
+    <attr name="searchSuggestionBackground" format="integer" />
+    <attr name="android:hint" />
+    <attr name="android:textColor" />
+    <attr name="android:textColorHint" />
+</declare-styleable>
+
+<declare-styleable name="StyledTextView">
+    <attr name="text_style" format="enum">
+        <enum name="normal" value="0"/>
+        <enum name="bold" value="1"/>
+        <enum name="italic" value="2"/>
+        <enum name="black" value="4"/>
+        <enum name="light" value="5"/>
+        <enum name = "medium" value="6"/>
+    </attr>
+</declare-styleable>
+
+<declare-styleable name="UIButton">
+    <attr name="color_pressed" format="color"/>
+    <attr name="color_unpressed" format="color"/>
+    <attr name="ripple_color" format="color"/>
+    <attr name="ripple_alpha" format="integer"/>
+    <attr name="ripple_duration" format="integer"/>
+    <attr name="alpha_pressed" format="integer"/>
+    <attr name="radius" format="dimension"/>
+    <attr name="shape_type" format="enum">
+        <enum name="round" value="0"/>
+        <enum name="rectangle" value="1"/>
+    </attr>
+</declare-styleable>
+
+
+<declare-styleable name="SlidingUpPanelLayout">
+    <attr name="panelHeight" format="dimension" />
+    <attr name="shadowHeight" format="dimension" />
+    <attr name="paralaxOffset" format="dimension" />
+    <attr name="fadeColor" format="color" />
+    <attr name="flingVelocity" format="integer" />
+    <attr name="dragView" format="reference" />
+    <attr name="overlay" format="boolean"/>
+    <attr name="anchorPoint" format="float" />
+    <attr name="initialState" format="enum">
+        <enum name="expanded" value="0" />
+        <enum name="collapsed" value="1" />
+        <enum name="anchored" value="2" />
+        <enum name="hidden" value="3" />
+    </attr>
+</declare-styleable>
+
+
+
+<declare-styleable name="NiceTabLayout">
+    <attr name="ntlTabDistributeEvenly" format="boolean"/>
+    <attr name="ntlDrawOrder" format="enum">
+        <enum name="indicatorUnderlineDivider" value="0"/>
+        <enum name="indicatorDividerUnderline" value="1"/>
+        <enum name="underlineIndicatorDivider" value="2"/>
+        <enum name="underlineDividerIndicator" value="3"/>
+        <enum name="dividerIndicatorUnderline" value="4"/>
+        <enum name="dividerUnderlineIndicator" value="5"/>
+    </attr>
+
+    <attr name="ntlTabMode" format="enum">
+        <!-- Show title only -->
+        <enum name="titleOnly" value="0"/>
+        <!-- Show icon only(notice: your pager adapter must implements NiceTabLayout.IconProvider) -->
+        <enum name="iconOnly" value="1"/>
+        <!-- Show both title and icon(notice: your pager adapter must implements NiceTabLayout.IconProvider) -->
+        <enum name="both" value="2"/>
+    </attr>
+    <attr name="ntlTabColorBlendMode" format="enum">
+        <enum name="none" value="0"/>
+        <!-- Default color and selected color -->
+        <enum name="defaultSelected" value="1"/>
+        <!-- Selected color and next selected color -->
+        <enum name="nextSelected" value="2"/>
+    </attr>
+    <attr name="ntlTabBackground" format="reference|color"/>
+    <attr name="ntlTabOffset" format="dimension"/>
+    <attr name="ntlTabSelectedCenter" format="boolean"/>
+
+    <!-- Underline attrs -->
+    <attr name="ntlShowUnderline" format="boolean"/>
+    <attr name="ntlUnderlineInFront" format="boolean"/>
+    <attr name="ntlUnderlineGravity" format="enum">
+        <enum name="top" value="0"/>
+        <enum name="bottom" value="1"/>
+    </attr>
+    <attr name="ntlUnderlineColor" format="color"/>
+    <attr name="ntlUnderlineHeight" format="dimension"/>
+    <attr name="ntlUnderlinePaddingTop" format="dimension"/>
+    <attr name="ntlUnderlinePaddingBottom" format="dimension"/>
+
+    <!-- Divider attrs -->
+    <attr name="ntlShowDivider" format="boolean"/>
+    <attr name="ntlDividerColor" format="color"/>
+    <attr name="ntlDividerColors" format="reference"/>
+    <attr name="ntlDividerWidth" format="dimension"/>
+    <attr name="ntlDividerPadding" format="dimension"/>
+    <attr name="ntlDividerPaddingTop" format="dimension"/>
+    <attr name="ntlDividerPaddingBottom" format="dimension"/>
+    <attr name="ntlDividerPaddingLeft" format="dimension"/>
+    <attr name="ntlDividerPaddingRight" format="dimension"/>
+
+    <!-- Indicator attrs -->
+    <attr name="ntlShowIndicator" format="boolean"/>
+    <attr name="ntlIndicatorGravity" format="enum">
+        <enum name="top" value="0"/>
+        <enum name="center" value="1"/>
+        <enum name="bottom" value="2"/>
+    </attr>
+    <attr name="ntlIndicatorColor" format="color"/>
+    <attr name="ntlIndicatorColors" format="reference"/>
+    <attr name="ntlIndicatorHeight" format="dimension"/>
+    <attr name="ntlIndicatorCornerRadius" format="dimension"/>
+    <attr name="ntlIndicatorPaddingTop" format="dimension"/>
+    <attr name="ntlIndicatorPaddingBottom" format="dimension"/>
+
+    <!-- Tab attrs(for title and icon) -->
+    <attr name="ntlDefaultTabColor" format="color"/>
+    <attr name="ntlDefaultTabColors" format="reference"/>
+    <attr name="ntlSelectedTabColor" format="color"/>
+    <attr name="ntlSelectedTabColors" format="reference"/>
+    <attr name="ntlTabPadding" format="dimension"/>
+    <attr name="ntlTabPaddingTop" format="dimension"/>
+    <attr name="ntlTabPaddingBottom" format="dimension"/>
+    <attr name="ntlTabPaddingLeft" format="dimension"/>
+    <attr name="ntlTabPaddingRight" format="dimension"/>
+    <attr name="ntlTabViewLayoutId" format="reference"/>
+    <attr name="ntlTabViewTextOrImageViewId" format="reference"/>
+    <!-- Used when tab shows title and icon -->
+    <attr name="ntlDrawablePadding" format="dimension"/>
+
+    <!-- Title text attrs -->
+    <attr name="ntlTextSize" format="dimension"/>
+    <attr name="ntlTextAllCaps" format="boolean"/>
+    <attr name="ntlTextStyle" format="enum">
+        <enum name="normal" value="0"/>
+        <enum name="bold" value="1"/>
+        <enum name="italic" value="2"/>
+        <enum name="boldItalic" value="3"/>
+        <enum name="medium" value="4"/>
+    </attr>
+
+    <!-- Icon cross fade effect(only if you set icon drawable with selector(StateListDrawable), this will effect) -->
+    <attr name="ntlIconCrossFade" format="boolean"/>
+    <!-- If you set icon drawable with selector, set false gives better performance -->
+    <attr name="ntlIconTint" format="boolean"/>
+
+    <!-- Blur -->
+    <attr name="ntlBlurRadius" format="integer" />
+    <attr name="ntlDownSampleFactor" format="integer" />
+    <attr name="ntlOverlayColor" format="color" />
+
+    <!-- Badge -->
+    <attr name="ntlBadgeGravity" format="enum">
+        <enum name="left" value="0"/>
+        <enum name="center_left" value="1"/>
+        <enum name="center_right" value="2"/>
+        <enum name="right" value="3"/>
+    </attr>
+    <attr name="ntlBadgeTextColor" format="color"/>
+    <attr name="ntlBadgeTextSize" format="dimension"/>
+    <attr name="ntlBadgeHeight" format="dimension" />
+    <attr name="ntlBadgeCornerRadius" format="dimension" />
+    <attr name="ntlBadgeMinWidth" format="dimension" />
+    <attr name="ntlBadgeMaxWidth" format="dimension" />
+    <attr name="ntlBadgeMarginLeft" format="dimension" />
+    <attr name="ntlBadgeMarginRight" format="dimension" />
+    <attr name="ntlBadgeMarginTop" format="dimension" />
+    <attr name="ntlBadgePaddingLeftRight" format="dimension" />
+    <attr name="ntlBadgeSmallSize" format="dimension" />
+    <attr name="ntlBadgeBackground" format="reference|color"/>
+</declare-styleable>
+
+
+
+<declare-styleable name="TagGroup">
+    <!-- Whether the tag group is in append mode. -->
+    <attr name="atg_isAppendMode" format="boolean" />
+    <!-- If the tag group is in append mode, what the hint of input tag. -->
+    <attr name="atg_inputHint" format="string" />
+
+    <!-- The tag view outline border color. -->
+    <attr name="atg_borderColor" format="color" />
+    <!-- The tag view text color. -->
+    <attr name="atg_textColor" format="color" />
+    <!-- The tag view background color. -->
+    <attr name="atg_backgroundColor" format="color" />
+
+    <!-- The dash outline border color, when in append mode. -->
+    <attr name="atg_dashBorderColor" format="color" />
+    <!-- The input tag hint text color, when in append mode. -->
+    <attr name="atg_inputHintColor" format="color" />
+    <!-- The input tag type text color, when in append mode. -->
+    <attr name="atg_inputTextColor" format="color" />
+
+    <!-- The checked tag view outline border color. -->
+    <attr name="atg_checkedBorderColor" format="color" />
+    <!-- The checked text color. -->
+    <attr name="atg_checkedTextColor" format="color" />
+    <!-- The checked marker color. -->
+    <attr name="atg_checkedMarkerColor" format="color" />
+    <!-- The checked tag view background color. -->
+    <attr name="atg_checkedBackgroundColor" format="color" />
+
+    <!-- The tag view background color, when the tag view is being pressed. -->
+    <attr name="atg_pressedBackgroundColor" format="color" />
+
+    <!-- The tag view outline border stroke width. -->
+    <attr name="atg_borderStrokeWidth" format="dimension" />
+    <!-- The tag view text size. -->
+    <attr name="atg_textSize" format="dimension" />
+
+    <attr name="atg_horizontalSpacing" format="dimension" />
+    <attr name="atg_verticalSpacing" format="dimension" />
+    <attr name="atg_horizontalPadding" format="dimension" />
+    <attr name="atg_verticalPadding" format="dimension" />
+</declare-styleable>
+
+<declare-styleable name="Themes">
+    <attr name="tagGroupStyle" format="reference" />
+</declare-styleable>
+
+<!-- Declare custom theme attributes that allow changing which styles are
+     used for button bars depending on the API level.
+     ?android:attr/buttonBarStyle is new as of API 11 so this is
+     necessary to support previous API levels. -->
+<declare-styleable name="ButtonBarContainerTheme">
+    <attr name="metaButtonBarStyle" format="reference" />
+    <attr name="metaButtonBarButtonStyle" format="reference" />
+</declare-styleable>
+
+
+</resources>

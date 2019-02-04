@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Verse.app (pro)</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">RecordActivity</string>
+    <string name="title_activity_practice_actvity">PracticeActvity</string>
+    <string name="title_activity_add_new_line">AddNewLineActivity</string>
+
+
+    <string name="upload_text">Your files will be uploaded to the Google Drive account you authorized. If you would like to un-authorize this account go to Settings > Sign out of Google Drive.</string>
+
+
+    <string name="error_title">Can\'t Connect</string>
+    <string name="error_sub_title">Something went wrong...</string>
+    <string name="error_refresh_text">RETRY</string>
+    <string name="title_activity_inside_channel_activity">Inside Channel</string>
+    <string name="title_activity_show_more">More Videos</string>
+    <string name="cannot_load_home_activity">Veed is offline. Check network connection and try again :(</string>
+    <string name="sorry_nothing_new">Sorry there\'s nothing new :(</string>
+    <string name="no_network">No network connection :(</string>
+    <string name="no_connection_to_parse">Cannot reach Veed:(</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_create_new_save_category">CreateNewSaveCategoryActivity</string>
+    <string name="add_tag">Add Tag</string>
+
+
+    <string name="cab_title_x"> </string>
+    <string name="done">Done</string>
+
+    <string name="is_app_folder_created">is_app_folder_created</string>
+    <string name="is_first_run">is_first_run</string>
+
+    <string name="app_folder_drive_id">app_folder_drive_id</string>
+
+
+    <string name="receive_notifications_switch">receive_notifications_setting_switch</string>
+    <string name="help_setting">show_help</string>
+    <string name="fullscreen_setting">fullscreen_setting</string>
+    <string name="images_only_on_wifi_setting">images_only_on_wifi_setting</string>
+    <string name="theme_setting">theme_setting</string>
+    <string name="auto_theme_change_setting">auto_theme_change_setting</string>
+    <string name="google_drive">google_drive</string>
+    <string name="open_source_libraries">open_source_libraries</string>
+    <string name="list_mode_setting">list_mode</string>
+    <string name="feedback">feedback</string>
+    <string name="choose_theme_prompt">Veed can be used either with a light theme or dark Theme. You can change this setting later.</string>
+
+
+    <string-array name="long_press_list">
+        <item>Share</item>
+        <item>Save</item>
+        <item>Copy Share Link</item>
+    </string-array>
+
+    <string-array name="long_press_list_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="listType_array">
+        <item>Staggered Grid (Default)</item>
+        <item>Large Cards</item>
+    </string-array>
+
+    <string-array name="listType_array_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string name="title_activity_edit_line">EditLineActivity</string>
+
+
+    <string name="show_home_tap_target">home_tap_target</string>
+    <string name="show_cover_tap_target">show_cover_tap_target</string>
+    <string name="show_edit_tap_target">show_edit_tap_target</string>
+    <string name="show_cloud_tap_target">show_cloud_tap_target</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_libraries">LibrariesActivity</string>
+
+
+</resources>

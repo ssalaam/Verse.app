@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.veed.oduchantingapp.HomeActivity">
+
+    <item android:id="@+id/action_cloud" android:title="Push To Google Drive"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+    <item android:id="@+id/action_edit" android:title="Edit"
+        android:orderInCategory="100" app:showAsAction="never" />
+
+</menu>

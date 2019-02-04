@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_chant_cover"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.veed.oduchantingapp.ChantCoverActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:visibility="visible"
+        android:background="@color/transparent"
+        app:theme="?myActionBarToolbarStyle"
+        android:touchscreenBlocksFocus="false"
+        android:elevation="4dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:transitionName="cover"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:id="@+id/cover" />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_marginTop="100dp"
+    android:fillViewport="true"
+    android:id="@+id/info_sc"
+    android:scrollbars="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/info"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?myPrimaryColor"
+        android:padding="20dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ifa Chant"
+            android:id="@+id/title"
+            android:maxLines="5"
+            android:layout_gravity="left"
+            android:lineSpacingExtra="2dp"
+            android:textColor="?mytitleTextColor_onBack"
+            android:textStyle="bold"
+            android:textSize="26sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9 lines"
+            android:id="@+id/desc"
+            android:layout_alignParentBottom="false"
+            android:maxLines="8"
+            android:ellipsize="end"
+            android:isScrollContainer="false"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:lineSpacingExtra="2dp"
+            android:textColor="?mytitleTextColor_onBack"
+            />
+
+        <com.veed.oduchantingapp.CloudChip.ChipCloud
+            xmlns:chipcloud="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/chip_cloud"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            chipcloud:deselectedColor="@color/md_grey_300"
+            chipcloud:deselectedFontColor="@color/md_grey_800"
+            chipcloud:selectedColor="@color/md_grey_300"
+            chipcloud:selectedFontColor="@color/md_grey_800"
+            chipcloud:deselectTransitionMS="500"
+            chipcloud:selectTransitionMS="750"
+            />
+
+        <include layout="@layout/divider"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:ico_color="@color/white"
+                android:id="@+id/cloud_icon"
+                app:ico_icon="gmd-cloud-upload"
+                app:ico_size="35dp"
+                android:layout_gravity="center" />
+
+
+            <TextView android:id="@+id/cloud"
+                style="@style/Material_Action"
+                android:textColor="?mytitleTextColor_onBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="Push To Cloud"
+                />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:ico_color="@color/white"
+                android:id="@+id/edit_icon"
+                app:ico_icon="gmd-edit"
+                app:ico_size="20dp"
+                android:layout_gravity="center" />
+
+
+            <TextView android:id="@+id/edit"
+                style="@style/Material_Action"
+                android:clickable="true"
+                android:textColor="?mytitleTextColor_onBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+               />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab_practice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:fab_size="normal"
+        app:fab_colorNormal="?fabSubItemsColor"
+        app:fab_colorPressed="?fabSubItemsColor"
+        app:fab_colorRipple="#99FFFFFF"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/info_sc"
+        android:layout_marginTop="-32dp"
+        app:fab_label="Practice"
+        app:fab_showShadow="true"
+        app:fab_shadowColor="#66000000"
+        app:fab_shadowRadius="1dp"
+        app:elevation="0dp"
+        />
+
+
+</RelativeLayout>

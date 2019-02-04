@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <SwitchPreference
+        android:key="@string/receive_notifications_switch"
+        android:title="Notifications"
+        android:defaultValue="true"
+        android:summary="When enabled you will receive periodic notifications"
+        />
+
+    <ListPreference
+        android:title="List Mode"
+        android:summary="%s"
+        android:key="@string/list_mode_setting"
+        android:defaultValue="1"
+        android:entries="@array/listType_array"
+        android:entryValues="@array/listType_array_values"/>
+
+    <SwitchPreference
+        android:key="@string/theme_setting"
+        android:title="Dark Theme"
+        android:defaultValue="true"
+        android:summary="Use dark theme to reduce brightness"
+        />
+
+    <SwitchPreference
+        android:key="@string/auto_theme_change_setting"
+        android:title="Auto theme switching"
+        android:defaultValue="false"
+        android:summary="Automatically switch between themes based on time of day"
+        />
+
+    <Preference
+        android:title="Google Drive"
+        android:summary="Manage Google Drive account"
+        android:key="@string/google_drive"
+        android:defaultValue="false"
+        />
+
+
+    <SwitchPreference
+        android:title="Show Help Suggestions"
+        android:key="@string/help_setting"
+        android:defaultValue="1"
+         />
+
+    <Preference
+        android:title="Open Source Libraries"
+        android:key="@string/open_source_libraries"
+        android:defaultValue="false"
+        />
+
+
+
+</PreferenceScreen>

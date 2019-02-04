@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/frame"
+        android:paddingTop="?android:actionBarSize">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:elevation="1dp"
+            android:layout_gravity="left|top"
+            android:max="100"
+            android:progress="0"
+            android:indeterminate="false" />
+    </FrameLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?myPrimaryColor"
+        app:title=" "
+        app:theme="?myActionBarToolbarStyle"
+        app:popupTheme="?mytoolbarPopUpStyle"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:layout_gravity="left|top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:text_style="bold"
+        android:id="@+id/show_more_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="false"
+        android:text="Show me more like this"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentTop="false"
+        android:textAlignment="center"
+        android:background="?channelRippleSelector"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:visibility="gone"
+        android:layout_marginBottom="60dp"
+        android:elevation="4dp" />
+
+</FrameLayout>

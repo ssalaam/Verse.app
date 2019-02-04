@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?backgroundColor"
+    android:id="@+id/base"
+    tools:context="com.veed.oduchantingapp.HomeActivity">
+
+
+        <FrameLayout
+            android:id="@+id/drawer_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <!-- the layout which will be the content of the activity (which will be hosted inside the drawer (NOT the list of the drawer)) -->
+        <FrameLayout
+            android:id="@+id/root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?backgroundColor">
+
+            <ProgressBar
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center"
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleLarge" />
+
+
+       <com.veed.oduchantingapp.DragSelectRecyclerView.DragSelectRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll"
+        app:recyclerviewEmptyView="@layout/empty_view_home"
+        android:visibility="visible"
+        app:dsrv_autoScrollEnabled="false"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:background="?myPrimaryColor"
+            app:theme="?myActionBarToolbarStyle"
+            app:popupTheme="?mytoolbarPopUpStyle"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:visibility="visible"
+            app:contentInsetStart="15dp"
+            android:layout_marginBottom="4dp"
+            android:title=""
+            android:elevation="3dp"
+            app:title="Chant App">
+
+        </android.support.v7.widget.Toolbar>
+
+        <ViewStub
+            android:id="@+id/cab_stub"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize" />
+
+    </FrameLayout>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/add"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="visible"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:fab_size="normal"
+        app:fab_colorNormal="?fabColor"
+        app:fab_colorPressed="?fabColor"
+        app:fab_colorRipple="#99FFFFFF"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+    </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

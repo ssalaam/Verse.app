@@ -1,0 +1,26 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?backgroundColor">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:visibility="visible"
+        android:background="?myPrimaryColor"
+        app:theme="?myActionBarToolbarStyle"
+        android:title="Settings"
+        app:contentInsetStart ="15dp"
+        android:elevation="3dp"/>
+
+    <FrameLayout
+        android:paddingTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_content"></FrameLayout>
+
+</FrameLayout>
+

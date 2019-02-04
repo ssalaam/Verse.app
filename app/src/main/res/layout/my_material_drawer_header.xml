@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/material_drawer_account_header_compact"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/material_drawer_account_header_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/material_drawer_account_header_compact"
+        android:scaleType="fitXY" />
+
+    <com.veed.oduchantingapp.Utils.StyledTextView
+        app:text_style="bold"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_gravity="center_vertical|left"
+        android:layout_marginLeft="20dp"
+        android:text="ẹsẹ"/>
+
+</FrameLayout>

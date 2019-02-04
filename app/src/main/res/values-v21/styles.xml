@@ -1,0 +1,503 @@
+<resources>
+
+    <style name="LightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowContentTransitions">true</item>
+
+        <item name="myTransparentColor">#B1FFFFFF</item>
+        <item name="android:colorPrimary">@color/light_primary</item>
+        <item name="android:colorPrimaryDark">@color/light_primaryDark</item>
+        <item name="android:colorAccent">@color/light_accent</item>
+        <item name="myColorAccent">@color/light_accent</item>
+        <item name="myPrimaryColor">@color/light_primary</item>
+        <item name="myPrimaryDarkColor">@color/light_primaryDark</item>
+        <item name="backgroundColor">@color/light_backgroundColor</item>
+        <item name="mycardBackgroundColor">@color/light_cardBackgroundColor</item>
+
+        <item name="fabColor">@color/light_fab</item>
+        <item name="fabSubItemsColor">@color/light_fabSub</item>
+
+        <item name="android:textColor">@color/light_titleTextColor_on_background</item>
+        <item name="android:textColorSecondary">@color/light_subtitleTextColor_on_background</item>
+
+        <item name="mytitleTextColor">@color/light_titleTextColor</item>
+        <item name="mysubtitleTextColor">@color/light_subtitleTextColor</item>
+
+        <item name="mytitleTextColor_onBack">@color/light_titleTextColor_on_background</item>
+        <item name="mysubtitleTextColor_onBack">@color/light_subtitleTextColor_on_background</item>
+
+        <item name="darkTextColor">@color/light_darkTextColor</item>
+        <item name="lightTextColor">@color/light_lightTextColor</item>
+
+        <item name="hintColor">#c7c5c5</item>
+
+        <item name="mytoolbarStyle">@style/ToolbarDark</item>
+        <item name="myActionBarToolbarStyle">@style/Toolbar</item>
+
+        <item name="android:popupMenuStyle">@style/Theme.AppCompat.Light</item>
+        <item name="mytoolbarPopUpStyle">@style/LightPopupTheme</item>
+
+        <item name="channelRippleSelector">@drawable/box_ripple_selector</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:overScrollMode">always</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        <!-- MaterialDrawer specific values -->
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+
+        <item name="android:alertDialogTheme">@style/LightDialogTheme</item>
+
+    </style>
+
+
+    <style name="DarkTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="gradient_back">@drawable/gradient_bg</item>
+
+        <item name="myTransparentColor">#A6000000</item>
+        <item name="android:colorPrimary">@color/dark_primary</item>
+        <item name="android:colorPrimaryDark">@color/dark_primaryDark</item>
+        <item name="android:colorAccent">@color/dark_accent</item>
+        <item name="myColorAccent">@color/dark_accent</item>
+
+        <item name="fabColor">@color/dark_fab</item>
+        <item name="fabSubItemsColor">@color/dark_fabSub</item>
+
+
+        <item name="hintColor">#6effffff</item>
+
+
+        <item name="android:textColor">@color/dark_titleTextColor</item>
+        <item name="android:textColorSecondary">@color/dark_subtitleTextColor</item>
+
+        <item name="myPrimaryColor">@color/dark_primary</item>
+        <item name="myPrimaryDarkColor">@color/dark_primaryDark</item>
+        <item name="backgroundColor">@color/dark_backgroundColor</item>
+        <item name="mycardBackgroundColor">@color/dark_cardBackgroundColor</item>
+        <item name="mytitleTextColor">@color/dark_titleTextColor</item>
+        <item name="mysubtitleTextColor">@color/dark_subtitleTextColor</item>
+        <item name="mytitleTextColor_onBack">@color/dark_titleTextColor</item>
+        <item name="mysubtitleTextColor_onBack">@color/dark_subtitleTextColor</item>
+        <item name="darkTextColor">@color/dark_darkTextColor</item>
+        <item name="lightTextColor">@color/dark_lightTextColor</item>
+
+        <item name="mytoolbarStyle">@style/Toolbar</item>
+        <item name="myActionBarToolbarStyle">@style/Toolbar</item>
+
+        <item name="android:popupMenuStyle">@style/Theme.AppCompat.Light.DarkActionBar</item>
+        <item name="mytoolbarPopUpStyle">@style/DarkPopupTheme</item>
+
+        <item name="channelRippleSelector">@drawable/box_ripple_selector</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:overScrollMode">always</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        <!-- MaterialDrawer specific values -->
+        <item name="material_drawer_background">@color/material_drawer_dark_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_dark_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_dark_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_dark_secondary_text
+        </item>
+        <item name="material_drawer_hint_text">@color/material_drawer_dark_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_dark_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_dark_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_dark_selected</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_dark_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+        <item name="android:alertDialogTheme">@style/DarkDialogTheme</item>
+    </style>
+
+
+    <style name="LightTheme.SearchActivity" parent="LightTheme">
+        <item name="myTransparentColor">#B1FFFFFF</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:overScrollMode">always</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="DarkTheme.SearchActivity" parent="DarkTheme">
+        <item name="myTransparentColor">#A6000000</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:overScrollMode">always</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+
+    <style name="Toolbar" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/light_primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorSecondary">#ffffff</item>
+    </style>
+
+    <style name="ToolbarDark" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/light_primaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorSecondary">#000000</item>
+    </style>
+
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textColorHighlight">#000000</item>
+        <item name="android:textColorSecondary">#000000</item>
+        <item name="colorAccent">#000000</item>
+    </style>
+
+    <style name="LightPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/light_cardBackgroundColor</item>
+        <item name="android:textColor">@color/light_titleTextColor</item>
+    </style>
+
+    <style name="DarkPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/dark_backgroundColor</item>
+        <item name="android:textColor">@color/dark_titleTextColor</item>
+    </style>
+
+    <style name="DarkDialogTheme">
+        <item name="android:windowBackground">@color/drk_gray</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:colorAccent">@android:color/white</item>
+        <item name="android:textColorAlertDialogListItem">@android:color/white</item>
+    </style>
+
+    <style name="LightDialogTheme">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:textColorSecondary">@android:color/black</item>
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:colorAccent">@android:color/black</item>
+        <item name="android:textColorAlertDialogListItem">@android:color/black</item>
+    </style>
+
+
+    <style name="LightSettingsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+
+        <item name="myTransparentColor">#B1FFFFFF</item>
+        <item name="android:colorPrimary">@color/light_primary</item>
+        <item name="android:colorPrimaryDark">@color/light_primaryDark</item>
+        <item name="android:colorAccent">@color/light_accent</item>
+        <item name="myColorAccent">@color/light_accent</item>
+        <item name="myPrimaryColor">@color/light_primary</item>
+        <item name="myPrimaryDarkColor">@color/light_primaryDark</item>
+        <item name="backgroundColor">@color/light_backgroundColor</item>
+        <item name="mycardBackgroundColor">@color/light_cardBackgroundColor</item>
+
+        <item name="fabColor">@color/light_fab</item>
+        <item name="fabSubItemsColor">@color/light_fabSub</item>
+
+        <item name="android:textColor">@color/light_titleTextColor</item>
+        <item name="android:textColorSecondary">@color/light_subtitleTextColor</item>
+
+        <item name="mytitleTextColor">@color/light_titleTextColor</item>
+        <item name="mysubtitleTextColor">@color/light_subtitleTextColor</item>
+
+        <item name="mytitleTextColor_onBack">@color/light_titleTextColor</item>
+        <item name="mysubtitleTextColor_onBack">@color/light_subtitleTextColor</item>
+
+        <item name="darkTextColor">@color/light_darkTextColor</item>
+        <item name="lightTextColor">@color/light_lightTextColor</item>
+
+        <item name="hintColor">#c7c5c5</item>
+
+        <item name="mytoolbarStyle">@style/ToolbarDark</item>
+        <item name="myActionBarToolbarStyle">@style/Toolbar</item>
+
+        <item name="android:popupMenuStyle">@style/Theme.AppCompat.Light</item>
+        <item name="mytoolbarPopUpStyle">@style/LightPopupTheme</item>
+
+        <item name="channelRippleSelector">@drawable/box_ripple_selector</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:overScrollMode">always</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="drawerArrowStyle">@style/MaterialDrawer.DrawerArrowStyle</item>
+
+        <!-- MaterialDrawer specific values -->
+        <item name="material_drawer_background">@color/material_drawer_background</item>
+        <item name="material_drawer_primary_text">@color/material_drawer_primary_text</item>
+        <item name="material_drawer_primary_icon">@color/material_drawer_primary_icon</item>
+        <item name="material_drawer_secondary_text">@color/material_drawer_secondary_text</item>
+        <item name="material_drawer_hint_text">@color/material_drawer_hint_text</item>
+        <item name="material_drawer_hint_icon">@color/material_drawer_hint_icon</item>
+        <item name="material_drawer_divider">@color/material_drawer_divider</item>
+        <item name="material_drawer_selected">@color/material_drawer_selected</item>
+        <item name="material_drawer_selected_text">@color/material_drawer_selected_text</item>
+        <item name="material_drawer_header_selection_text">
+            @color/material_drawer_header_selection_text
+        </item>
+
+        <item name="android:alertDialogTheme">@style/LightDialogTheme</item>
+
+    </style>
+
+
+    <style name="Material_Display_4">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">112sp</item>
+    </style>
+
+    <style name="Material_Display_3">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">56sp</item>
+    </style>
+
+    <style name="Material_Display_2">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">45sp</item>
+    </style>
+
+    <style name="Material_Display_1">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">34sp</item>
+    </style>
+
+    <style name="Material_Headline">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#444</item>
+    </style>
+
+    <style name="Material_Title">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#555</item>
+    </style>
+
+    <style name="Material_Subhead">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#777</item>
+    </style>
+
+    <style name="Material_Body2">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Material_Body1">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Material_Caption">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Material_Button">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">14sp</item>
+        <!-- <item name="android:textAllCaps">true</item> -->
+    </style>
+
+
+    <style name="Material_Card_Head_Image">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="Material_Card_Rich_Media_Image">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- ######################################################## -->
+    <!-- #                        Title                         # -->
+    <!-- ######################################################## -->
+
+    <style name="Material_Card_Title" parent="Material_Headline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">12dp</item>
+    </style>
+
+    <style name="Material_Card_Title_Image" parent="Material_Card_Title">
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- ######################################################## -->
+    <!-- #                      Subtitle                        # -->
+    <!-- ######################################################## -->
+
+    <style name="Material_Card_Subtitle_24dp" parent="Material_Subhead">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">24dp</item>
+    </style>
+
+    <style name="Material_Card_Subtitle_16dp" parent="Material_Card_Subtitle_24dp">
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="Material_Card_Subtitle_Image" parent="Material_Card_Subtitle_16dp">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- ######################################################## -->
+    <!-- #                    Supporting Text                   # -->
+    <!-- ######################################################## -->
+
+    <!-- Should be used if there are no actions -->
+    <style name="Material_Card_Supporting_Text_24dp" parent="Material_Body1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">24dp</item>
+    </style>
+
+    <!-- Should be used if there are additional actions or supporting text -->
+    <style name="Material_Card_Supporting_Text_16dp" parent="Material_Card_Supporting_Text_24dp">
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <!-- ######################################################## -->
+    <!-- #                        Others                        # -->
+    <!-- ######################################################## -->
+
+    <style name="Material_Card_View">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">6dp</item>
+    </style>
+
+    <style name="MainLayout">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CardTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:textSize">24sp</item>
+        <!--<item name="android:fontFamily">sans-serif-light</item>-->
+
+        <item name="android:gravity">bottom|left</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+    <style name="CardSubtitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
+        <item name="android:textSize">14sp</item>
+        <!--<item name="android:fontFamily">sans-serif-light</item>-->
+
+        <item name="android:gravity">bottom|left</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="CardDescription">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+    </style>
+
+    <style name="Material_Action" parent="@style/Base.TextAppearance.AppCompat.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:buttonStyle">@style/Base.Widget.AppCompat.Button</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="PrimaryButtonBaseStyle" parent="@style/Material_Action">
+        <item name="android:textColor">@color/orange_button</item>
+    </style>
+
+
+    <style name="myRecyclerViewStyle">
+        <!-- NOTE: clipChildren should be true on API level 10 -->
+        <item name="android:clipChildren">true</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="exampleLauncherButtonStyle">
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="commonListItemStyle"></style>
+
+    <style name="sectionHeaderItemStyle">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+        <item name="android:gravity">left|bottom</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+
+</resources>

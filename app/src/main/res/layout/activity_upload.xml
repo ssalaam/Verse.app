@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?backgroundColor"
+    android:orientation="vertical"
+    tools:context="com.veed.oduchantingapp.UploadActivity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:theme="?myActionBarToolbarStyle"
+            app:popupTheme="?mytoolbarPopUpStyle"
+            app:contentInsetStart="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="?myPrimaryColor"
+            android:elevation="3dp"
+            >
+
+        </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:paddingTop="?actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:text="FOLDER TITLE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="?mytitleTextColor" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/chantTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Eji Ogbe v2"
+        app:met_hideUnderline="false"
+        app:met_baseColor="?mytitleTextColor"
+        app:met_primaryColor="?mytitleTextColor"
+        app:met_textColorHint="?mysubtitleTextColor"
+        app:met_textColor="?mytitleTextColor"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="0dp"
+        android:textCursorDrawable="@null"
+        app:met_minCharacters="4"
+        app:met_maxCharacters="30"
+        android:layout_below="@id/textView"
+        android:textSize="26dp">
+
+    </com.rengwuxian.materialedittext.MaterialEditText>
+
+
+    <TextView
+        android:text="@string/upload_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/chantTitle"
+        android:textColor="?mytitleTextColor"
+        android:padding="20dp"
+         />
+
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/add"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="visible"
+        app:menu_labels_showAnimation="@anim/fab_slide_in_from_right"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:fab_size="normal"
+        app:fab_colorNormal="?fabColor"
+        app:fab_colorPressed="?fabColor"
+        app:fab_colorRipple="#99FFFFFF"
+        android:layout_gravity="bottom|right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+</FrameLayout>
